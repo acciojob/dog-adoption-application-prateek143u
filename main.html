@@ -4,12 +4,78 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<style>
+     body {
+            font-family: Arial, sans-serif;
+        }
+ form{
+	  max-width: 400px;
+	  margin: 0 auto;
+	  padding: 30px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+      background-color: #f9f9f9;  
+ }
+		  label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+		 input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+		  input[type="checkbox"] {
+            margin-top: 10px;
+        }
+		  select[multiple] {
+            height: auto;
+        }
+		  input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+		  input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+		
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+	<form>
+		<lable for = "name">Name</lable>
+        <input type = "text" id = "name" placeholder = "Name" /> 
+		
+		<label for = "phone">Phone Number</label>
+		<input type = "text" id = "phone" placeholder = "	Phone Number"/> 
+		
+		<label for ="address">Address</label>
+		<input type = "text" id = "address" placeholder = "Address"/> 
+		
+		<label for = "checkbox">Have you ever lived with a Dog before?</label>
+		<input type = "checkbox" id = "checkbox" value="Have you ever lived with a Dog before?"/>
+
+		<label for = "multiSelect">Please select your preferred breeds</label>
+		<select type  "select" id = "multiSelect">
+			  <option value="Breed 1">Breed 1</option>
+            <option value="Breed 2">Breed 2</option>
+            <option value="Breed 3">Breed 3</option>
+		</select>
+         <label for ="submit">Submit</label>
+		 <input type="submit" id = "submit" value="Submit">
+		
+	</form>
 
 </body>
 
